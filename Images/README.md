@@ -4,3 +4,7 @@ This simple script written using Apple Script makes all icons required for iOS p
 You need to put iTunesArtwork.png file to some folder, run script and select this folder. That's All! The script will make all required icon for you!
 
 Isn't it sophisticated solution? ;)
+
+![alt text](example_filder.png)
+
+![alt text](example_xcode.png)
