@@ -42,7 +42,7 @@ During creating module process you will face one option named *Add Module output
 
 ![alt text](Files/Output-option.png)
 
-###### The only additional action
+## The only additional action
 
 I've put the package of files into folder for comfort. Unfortunately xcode adds such structure as *folder references* but not as *group*.
 
