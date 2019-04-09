@@ -10,14 +10,15 @@
 
 import UIKit
 
-class ___VARIABLE_moduleName___Presenter : ___VARIABLE_moduleName___ModuleInput, ___VARIABLE_moduleName___InteractorOutput, ___VARIABLE_moduleName___ViewOutput {
+class ___VARIABLE_moduleName___Presenter : PresenterBase, ___VARIABLE_moduleName___ModuleInput, ___VARIABLE_moduleName___InteractorOutput, ___VARIABLE_moduleName___ViewOutput {
 	
 	weak var view : ___VARIABLE_moduleName___ViewInput?
 	var interactor : ___VARIABLE_moduleName___InteractorInput?
 	var router : ___VARIABLE_moduleName___RouterInput?
 	
-	func didTriggerViewReadyEvent()
+	override func didTriggerViewReadyEvent()
 	{
+		super.didTriggerViewReadyEvent()
 		self.view?.setupInitialState()
 	}
 	

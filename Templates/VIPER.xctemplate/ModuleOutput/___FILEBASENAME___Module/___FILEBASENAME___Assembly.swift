@@ -24,5 +24,9 @@ class ___VARIABLE_moduleName___Assembly
 		interactor.output = presenter
 		
 		presenter.router = router
+		
+		presenter.didConfigureModule()
+		
+		return presenter
 	}
 }
