@@ -27,6 +27,8 @@ class ___VARIABLE_moduleName___View : UIViewController, ___VARIABLE_moduleName__
 		super.viewWillAppear(animated)
 	}
 	
+	// MARK: - Setup
+	
 	func setupInitialState()
 	{
 		

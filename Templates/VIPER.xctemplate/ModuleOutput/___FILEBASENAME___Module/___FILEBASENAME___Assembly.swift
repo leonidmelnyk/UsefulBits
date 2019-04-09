@@ -10,7 +10,7 @@ import Foundation
 
 class ___VARIABLE_moduleName___Assembly
 {
-	func make(withViewFactory viewFactory: ViewFactoryProtocol) -> ___VARIABLE_moduleName___ModuleInput
+	func make(withViewFactory viewFactory: ViewFactoryProtocol, moduleOutput : ___VARIABLE_moduleName___ModuleOutput) -> ___VARIABLE_moduleName___ModuleInput
 	{
 		let presenter = ___VARIABLE_moduleName___Presenter()
 		let view = viewFactory.create(withClass: ___VARIABLE_moduleName___View.self) as! ___VARIABLE_moduleName___View
@@ -24,6 +24,8 @@ class ___VARIABLE_moduleName___Assembly
 		interactor.output = presenter
 		
 		presenter.router = router
+		
+		presenter.moduleOutput = output
 		
 		presenter.didConfigureModule()
 		

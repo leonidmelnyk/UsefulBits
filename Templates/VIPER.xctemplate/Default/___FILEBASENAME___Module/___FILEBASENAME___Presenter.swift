@@ -16,6 +16,8 @@ class ___VARIABLE_moduleName___Presenter : PresenterBase, ___VARIABLE_moduleName
 	var interactor : ___VARIABLE_moduleName___InteractorInput?
 	var router : ___VARIABLE_moduleName___RouterInput?
 	
+	// MARK: - Setup
+	
 	override func didTriggerViewReadyEvent()
 	{
 		super.didTriggerViewReadyEvent()
