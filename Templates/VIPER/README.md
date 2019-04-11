@@ -8,7 +8,7 @@ The template contains *Assembly* which configures whole module. The module consi
 
 There are separate files for each class, however, all the protocols are collected in one file.
 
-```
+```swift
 protocol MainTabModuleInput : class
 {
 
@@ -26,12 +26,12 @@ protocol MainTabInteractorOutput : class
 
 protocol MainTabViewInput : class
 {
-func setupInitialState()
+    func setupInitialState()
 }
 
 protocol MainTabViewOutput : class
 {
-func didTriggerViewReadyEvent()
+    func didTriggerViewReadyEvent()
 }
 
 protocol MainTabRouterInput : class
