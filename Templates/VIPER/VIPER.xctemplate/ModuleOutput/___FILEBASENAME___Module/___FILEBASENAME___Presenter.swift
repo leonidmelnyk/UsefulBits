@@ -10,8 +10,7 @@
 
 import UIKit
 
-class ___VARIABLE_moduleName___Presenter : PresenterBase, ___VARIABLE_moduleName___ModuleInput, ___VARIABLE_moduleName___InteractorOutput, ___VARIABLE_moduleName___ViewOutput
-{
+class ___VARIABLE_moduleName___Presenter : PresenterBase, ___VARIABLE_moduleName___ModuleInput, ___VARIABLE_moduleName___InteractorOutput, ___VARIABLE_moduleName___ViewOutput {
 	
 	weak var moduleOutput : ___VARIABLE_moduleName___ModuleOutput?
 	
@@ -21,8 +20,7 @@ class ___VARIABLE_moduleName___Presenter : PresenterBase, ___VARIABLE_moduleName
 	
 	// MARK: - Setup
 	
-	override func didTriggerViewReadyEvent()
-	{
+	override func didTriggerViewReadyEvent() {
 		super.didTriggerViewReadyEvent()
 		self.view?.setupInitialState()
 	}

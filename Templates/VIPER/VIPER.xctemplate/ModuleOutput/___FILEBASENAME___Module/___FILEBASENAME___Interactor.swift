@@ -10,7 +10,6 @@
 
 import UIKit
 
-class ___VARIABLE_moduleName___Interactor : ___VARIABLE_moduleName___InteractorInput
-{
+class ___VARIABLE_moduleName___Interactor : ___VARIABLE_moduleName___InteractorInput {
 	weak var output : ___VARIABLE_moduleName___InteractorOutput?
 }

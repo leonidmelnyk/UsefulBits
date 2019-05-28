@@ -10,28 +10,24 @@
 
 import UIKit
 
-class ___VARIABLE_moduleName___View : UIViewController, ___VARIABLE_moduleName___ViewInput
-{
+class ___VARIABLE_moduleName___View : UIViewController, ___VARIABLE_moduleName___ViewInput {
 	
 	var output : ___VARIABLE_moduleName___ViewOutput?
 	
 	// MARK: - Lifecycle events
 	
-	override func viewDidLoad()
-	{
+	override func viewDidLoad() {
 		super.viewDidLoad()
 		self.output?.didTriggerViewReadyEvent()
 	}
 	
-	override func viewWillAppear(_ animated: Bool)
-	{
+	override func viewWillAppear(_ animated: Bool) {
 		super.viewWillAppear(animated)
 	}
 	
 	// MARK: - Setup
 	
-	func setupInitialState()
-	{
+	func setupInitialState() {
 		
 	}
 	

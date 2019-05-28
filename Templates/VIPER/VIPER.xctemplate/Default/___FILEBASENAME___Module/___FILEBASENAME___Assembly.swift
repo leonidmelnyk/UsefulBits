@@ -8,10 +8,8 @@
 
 import Foundation
 
-class ___VARIABLE_moduleName___Assembly
-{
-	func make(withViewFactory viewFactory: ViewFactoryProtocol) -> ___VARIABLE_moduleName___ModuleInput
-	{
+class ___VARIABLE_moduleName___Assembly {
+	func make(withViewFactory viewFactory: ViewFactoryProtocol) -> ___VARIABLE_moduleName___ModuleInput {
 		let presenter = ___VARIABLE_moduleName___Presenter()
 		let view = viewFactory.create(withClass: ___VARIABLE_moduleName___View.self) as! ___VARIABLE_moduleName___View
 		let interactor = ___VARIABLE_moduleName___Interactor()

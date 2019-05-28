@@ -10,7 +10,6 @@
 
 import UIKit
 
-class ___VARIABLE_moduleName___Router : ___VARIABLE_moduleName___RouterInput
-{
+class ___VARIABLE_moduleName___Router : ___VARIABLE_moduleName___RouterInput {
 	
 }

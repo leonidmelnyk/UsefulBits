@@ -10,37 +10,30 @@
 
 import Foundation
 
-protocol ___VARIABLE_moduleName___ModuleInput : class
-{
+protocol ___VARIABLE_moduleName___ModuleInput : class {
 	
 }
 
-protocol ___VARIABLE_moduleName___ModuleOutput : class
-{
+protocol ___VARIABLE_moduleName___ModuleOutput : class {
 	
 }
 
-protocol ___VARIABLE_moduleName___InteractorInput : class
-{
+protocol ___VARIABLE_moduleName___InteractorInput : class {
 	
 }
 
-protocol ___VARIABLE_moduleName___InteractorOutput : class
-{
+protocol ___VARIABLE_moduleName___InteractorOutput : class {
 	
 }
 
-protocol ___VARIABLE_moduleName___ViewInput : class
-{
+protocol ___VARIABLE_moduleName___ViewInput : class {
 	func setupInitialState()
 }
 
-protocol ___VARIABLE_moduleName___ViewOutput : class
-{
+protocol ___VARIABLE_moduleName___ViewOutput : class {
 	func didTriggerViewReadyEvent()
 }
 
-protocol ___VARIABLE_moduleName___RouterInput : class
-{
+protocol ___VARIABLE_moduleName___RouterInput : class {
 	
 }

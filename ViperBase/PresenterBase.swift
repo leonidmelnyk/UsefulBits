@@ -8,33 +8,27 @@
 
 import Foundation
 
-class PresenterBase
-{
+class PresenterBase {
 	private var isModuleReady = false
 	private var isViewReady = false
 	
-	func didConfigureModule()
-	{
+	func didConfigureModule() {
 		isModuleReady = true
 		trySetupModule()
 	}
 	
-	func didTriggerViewReadyEvent()
-	{
+	func didTriggerViewReadyEvent() {
 		isViewReady = true
 		trySetupModule()
 	}
 	
-	private func trySetupModule()
-	{
-		if(isModuleReady && isViewReady)
-		{
+	private func trySetupModule() {
+		if(isModuleReady && isViewReady) {
 			setupModule()
 		}
 	}
 	
-	func setupModule()
-	{
+	func setupModule() {
 		
 	}
 }
