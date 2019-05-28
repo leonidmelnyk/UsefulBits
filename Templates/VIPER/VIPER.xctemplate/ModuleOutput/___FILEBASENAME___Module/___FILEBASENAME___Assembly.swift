@@ -11,7 +11,8 @@ import Foundation
 class ___VARIABLE_moduleName___Assembly {
 	func make(withViewFactory viewFactory: ViewFactoryProtocol, moduleOutput : ___VARIABLE_moduleName___ModuleOutput) -> ___VARIABLE_moduleName___ModuleInput {
 		let presenter = ___VARIABLE_moduleName___Presenter()
-		let view = viewFactory.create(withClass: ___VARIABLE_moduleName___View.self) as! ___VARIABLE_moduleName___View
+        guard let view = viewFactory.create(withClass: ___VARIABLE_moduleName___View.self) as? ___VARIABLE_moduleName___View
+            else { fatalError("View violation: \(___VARIABLE_moduleName___View.self)\nChekc all dependencies") }
 		let interactor = ___VARIABLE_moduleName___Interactor()
 		let router = ___VARIABLE_moduleName___Router()
 		

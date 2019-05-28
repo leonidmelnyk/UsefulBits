@@ -27,19 +27,19 @@ class ViewFactory {
 	}
 }
 
-fileprivate class RegularViewFactory : ViewFactoryProtocol {
+private class RegularViewFactory : ViewFactoryProtocol {
 	func create(withClass clazz: UIViewController.Type) -> UIViewController {
 		return clazz.init()
 	}
 }
 
-fileprivate class NibViewFactory : ViewFactoryProtocol {
+private class NibViewFactory : ViewFactoryProtocol {
 	func create(withClass clazz: UIViewController.Type) -> UIViewController {
 		return clazz.init(nibName : String.init(describing: clazz), bundle : Bundle.main)
 	}
 }
 
-fileprivate class StoryboardViewFactory : ViewFactoryProtocol {
+private class StoryboardViewFactory : ViewFactoryProtocol {
 	var storyboardId : String
 	var storyboardName : String
 	
